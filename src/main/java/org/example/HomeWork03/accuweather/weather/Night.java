@@ -1,7 +1,6 @@
 package org.example.HomeWork03.accuweather.weather;
 
-
-
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -12,6 +11,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "IconPhrase",
         "HasPrecipitation"
 })
+@JsonIgnoreProperties(ignoreUnknown = true) // Игнорировать неизвестные поля
 public class Night {
 
     @JsonProperty("Icon")
@@ -50,5 +50,4 @@ public class Night {
     public void setHasPrecipitation(Boolean hasPrecipitation) {
         this.hasPrecipitation = hasPrecipitation;
     }
-
 }

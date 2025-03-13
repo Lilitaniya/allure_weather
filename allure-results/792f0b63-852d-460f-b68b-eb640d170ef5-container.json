@@ -1,0 +1,1 @@
+{"uuid":"792f0b63-852d-460f-b68b-eb640d170ef5","name":"ForecastOneDayTest","children":["5b09f83b-e933-4833-b4b5-f31f5b990265"],"befores":[{"name":"initTest","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1741864789097,"stop":1741864789100}],"afters":[],"start":1741864789067,"stop":1741864791517}
