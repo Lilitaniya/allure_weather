@@ -10,7 +10,7 @@ jobs:
       - run: echo "Имя главной ветки ${{ github.ref }} репозитория ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: echo " ${{ github.repository }} репозиторий клонирован."
+      - run: echo "${{ github.repository }} репозиторий клонирован."
       - run: echo "Воркфлоу готов к тестированию."
       - name: List files in the repository
         run: |
