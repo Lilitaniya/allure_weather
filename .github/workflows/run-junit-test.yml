@@ -5,9 +5,9 @@ jobs:
   run-tests:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event. "
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - run: echo "Автоматический запуск событием ${{ github.event_name }}"
+      - run: echo "Тест проводится на ОС ${{ runner.os }} и сервере GitHub!"
+      - run: echo "Имя главной ветки ${{ github.ref }} репозитория ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v3
       - name: Set up JDK 17
@@ -17,4 +17,4 @@ jobs:
           distribution: 'temurin'
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "Статус теста ${{ job.status }}."
